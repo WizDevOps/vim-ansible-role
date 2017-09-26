@@ -2,7 +2,7 @@ galaxy_info:
   author: Daniel Andrei Minca
   description: Install vim and plugins, syntax highliters
   company: Open-Source
-  issue_tracker_url: http://example.com/issue/tracker
+  issue_tracker_url: https://github.com/WizDevOps/vim-ansible-role/issues
   license: GPLv3
   min_ansible_version: 2.2
   github_branch: origin/master
