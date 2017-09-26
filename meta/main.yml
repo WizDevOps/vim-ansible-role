@@ -15,4 +15,4 @@ galaxy_info:
     - vim-pathogen
     - vim-plugins
     - vim-syntax-plugins
-dependencies: []
+dependencies: []test
