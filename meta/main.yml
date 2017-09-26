@@ -15,7 +15,7 @@ galaxy_info:
         - all
   galaxy_tags:
     - vim
-    - vim-pathogen
-    - vim-plugins
-    - vim-syntax-plugins
+    - pathogen
+    - plugins
+    - editor
 dependencies: []
