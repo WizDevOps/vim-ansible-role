@@ -1,2 +1,8 @@
 ---
 # defaults file for vim-ansible-role
+
+# install additional syntax plugins
+VIM_SYNTAX_PLUGINS: []
+
+# additional vim plugins
+VIM_PLUGINS: []
