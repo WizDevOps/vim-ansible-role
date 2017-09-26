@@ -1,7 +1,7 @@
 vim role
 =========
 
-Provision machine with Vim
+Install Vim and other plugins, syntax highlighters et. al.
 
 Requirements
 ------------
