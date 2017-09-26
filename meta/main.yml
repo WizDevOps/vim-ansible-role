@@ -5,6 +5,7 @@ galaxy_info:
   issue_tracker_url: https://github.com/WizDevOps/vim-ansible-role/issues
   license: GPLv3
   min_ansible_version: 2.2
+  github_branch: origin/master
   platforms:
     - name: Debian
       versions:
