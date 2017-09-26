@@ -35,4 +35,4 @@ GPLv3
 Author Information
 ------------------
 
-@dminca
+Daniel Andrei Minca <dminca@protonmail.com>
