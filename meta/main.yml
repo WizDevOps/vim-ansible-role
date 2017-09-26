@@ -12,7 +12,7 @@ galaxy_info:
       - all
   - name: ArchLinux
     versions:
-      - latest
+      - all
   galaxy_tags:
     - vim
     - vim-pathogen
