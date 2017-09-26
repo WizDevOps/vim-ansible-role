@@ -15,7 +15,7 @@
     dest: "{{ ansible_env.HOME }}/.vim/autoload"
     force: no
 
-- name: VIM | install syntax plugins
+- name: VIM | install vim syntax highliters
   get_url:
     url: "{{ item }}"
     dest: "{{ ansible_env.HOME }}/.vim/syntax"
