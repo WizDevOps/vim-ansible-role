@@ -23,33 +23,12 @@
   with_items: VIM_SYNTAX_PLUGINS
 
 - name: VIM | install vim plugins
-  get_url:
+  git:
     url: "{{ item }}"
     dest: "{{ ansible_env.HOME }}/.vim/bundle"
-    force: no
-  with_items: VIM_PLUGINS
-
-- name: Pull vim-pathogen and nginx syntax
-  get_url:
-    url: "{{ item.url }}"
-    dest: "{{ ansible_env.HOME }}/.vim/{{ item.dest }}"
-    force: no
-  with_items:
-    - { url: "https://tpo.pe/pathogen.vim", dest: autoload }
-    - { url: "https://raw.githubusercontent.com/nginx/nginx/master/contrib/vim/syntax/nginx.vim", dest: syntax }
-
-- name: Install vim plugins
-  git:
-    repo: https://github.com/{{ item.name }}
-    dest: "{{ ansible_env.HOME }}/.vim/bundle/{{ item.dir }}"
+    force: true
     update: no
-    force: no
-  with_items:
-    - { name: scrooloose/nerdtree.git, dir: nerdtree.vim }
-    - { name: MarcWeber/vim-addon-mw-utils.git, dir: vim-addon-mw-utils }
-    - { name: kien/ctrlp.vim.git, dir: ctrlp.vim }
-    - { name: dyng/ctrlsf.vim.git, dir: ctrlsf.vim }
-    - { name: terryma/vim-multiple-cursors.git, dir: vim-multiple-cursors }
+  with_items: VIM_PLUGINS
 
 - name: VIM | deploy vim configuration file
   template:
