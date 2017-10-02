@@ -20,7 +20,7 @@
     url: "{{ item }}"
     dest: "{{ ansible_env.HOME }}/.vim/syntax"
     force: no
-  with_items: VIM_SYNTAX_PLUGINS
+  with_items: "{{ VIM_SYNTAX_PLUGINS }}"
 
 - name: VIM | install vim plugins
   git:
@@ -28,7 +28,7 @@
     dest: "{{ ansible_env.HOME }}/.vim/bundle"
     force: true
     update: no
-  with_items: VIM_PLUGINS
+  with_items: "{{ VIM_PLUGINS }}"
 
 - name: VIM | deploy vim configuration file
   template:
