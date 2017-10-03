@@ -24,7 +24,7 @@
 
 - name: VIM | install vim plugins
   git:
-    url: "{{ item }}"
+    repo: "{{ item }}"
     dest: "{{ ansible_env.HOME }}/.vim/bundle"
     force: true
     update: no
