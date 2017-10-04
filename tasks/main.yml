@@ -26,6 +26,7 @@
   git:
     repo: "{{ item }}"
     dest: "{{ ansible_env.HOME }}/.vim/bundle"
+    clone: false
   with_items: "{{ VIM_PLUGINS }}"
 
 - name: VIM | deploy vim configuration file
