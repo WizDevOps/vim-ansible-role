@@ -25,7 +25,7 @@
 - name: VIM | install vim plugins
   git:
     repo: "{{ item }}"
-    dest: "{{ ansible_env.HOME }}/.vim/bundle"
+    dest: "{{ ansible_env.HOME }}/.vim/bundle/{{ item | urlsplit('path') }}"
     clone: true
   with_items: "{{ VIM_PLUGINS }}"
 
