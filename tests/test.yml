@@ -1,4 +1,7 @@
 ---
 - hosts: localhost
+  connection: local
   roles:
-    - vim-ansible-role
+    - role: vim-ansible-role
+      VIM_PLUGINS: ["https://github.com/scrooloose/nerdtree.git"]
+
