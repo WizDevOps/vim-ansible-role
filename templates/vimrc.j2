@@ -23,12 +23,19 @@ let g:ctrlp_working_path_mode = 'ra'
 
 set backupdir=/tmp/
 set directory=/tmp/
+
+" search down into subfolders
+set path+=**
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable line numbers
 set number
 set relativenumber " show relative line no.
+
+" display all matching files when we tab complete
+set wildmenu
 
 " enable horizontal cursorline
 set cursorline
