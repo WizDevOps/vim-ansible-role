@@ -30,6 +30,6 @@
   with_items: "{{ VIM_PLUGINS }}"
 
 - name: VIM | deploy vim configuration file
-  copy:
-    src: vimrc
+  template:
+    src: vimrc.j2
     dest: "{{ ansible_env.HOME }}/.vimrc"
